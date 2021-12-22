@@ -1,0 +1,89 @@
+@use "../util" as *;
+
+.trailar_video_section {
+  article {
+    h1 {
+      font-size: 2.25rem;
+      line-height: 2.5rem;
+      margin-top: 5rem;
+      font-weight: 700;
+      color: #fff;
+      text-align: center;
+      margin-bottom: 30px;
+      @include lg{
+        margin-bottom: 0;
+        margin-top: 2.5rem;
+      }
+      @include md{
+        margin-bottom: -20px;
+      }
+      @include xsm{
+        margin-bottom: -5px;
+      }
+    }
+    .iframe_wrapper {
+      width: 100%;
+      height: 650px;
+      overflow: hidden;
+      @include lg{
+        height: 617px;
+      }
+      @include md{
+        height: 518px;
+      }
+      @include sm{
+        height: 395px;
+      }
+      @include xsm{
+        height: 263px;
+      }
+    }
+    .link_wrapper {
+      display: flex;
+      justify-content: space-evenly;
+      @include lg {
+        flex-direction: column;
+      }
+      .link_btn {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(90deg, #434bba, #6d3a88);
+        padding: 1rem 2rem;
+        border-radius: 0.5rem;
+        @include lg {
+          margin-bottom: 30px;
+          min-height: 55px;
+          padding: 0rem 2rem;
+        }
+        @include sm {
+          flex-direction: column;
+          min-height: 75px;
+          margin-bottom: 22px;
+        }
+        img {
+          width: 4rem;
+          height: 4rem;
+          @include lg {
+            width: 2.5rem;
+            height: 2.5rem;
+          }
+        }
+        p {
+          font-size: 1.875rem;
+          line-height: 2.25rem;
+          margin-bottom: 0;
+          text-align: center;
+          @include lg {
+            font-size: 1rem;
+            line-height: 1.25rem;
+          }
+        }
+      }
+    }
+  }
+}

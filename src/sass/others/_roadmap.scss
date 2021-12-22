@@ -1,0 +1,109 @@
+@use "../util" as *;
+
+.roadmap_section {
+  padding-top: 9rem;
+  width: 100%;
+  position: relative;
+  article {
+    //  Right side absolute image
+    .absolute {
+      position: absolute;
+    }
+    .bg_im_1 {
+      max-width: 100%;
+      height: auto;
+      right: 0;
+      top: 0;
+      z-index: -1;
+    }
+    .bg_im_2 {
+      max-width: 100%;
+      height: auto;
+      left: 0;
+      bottom: 0;
+      opacity: 0.2;
+      z-index: -1;
+    }
+    .title {
+      h2 {
+        color: $white;
+        margin-bottom: 40px;
+        text-align: center;
+      }
+    }
+    //  process bar start
+    .bg_border_img {
+      background-size: cover;
+      background-image: url("https://www.meta-legends.com/img/border-gradient.e65c189e.svg");
+      font-size: 1.5rem;
+      line-height: 2rem;
+      width: 5rem;
+      height: 5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      color: $white;
+      opacity: 0.665;
+      @include md{
+        width: 3rem;
+      height: 3rem;
+      font-size: 1rem;
+      }
+    }
+    .process_bar_line {
+      width: 0.25rem;
+      background-color: rgba(32, 72, 163, 1);
+      height: 100%;
+    }
+    .bg_process_img {
+      width: 100%;
+      padding-bottom: 5rem;
+      div {
+        background-position: center 0%;
+        background-image: url("https://www.meta-legends.com/img/progress-bar.a3dd127b.png");
+        height: 70px;
+        max-width: 600px;
+      }
+      .bold {
+        font-weight: 700;
+      }
+      p {
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+        color: $white;
+        padding-left: 1.25rem;
+        margin-bottom: 30px;
+        a {
+          text-decoration: none;
+          color: $sky;
+        }
+      }
+      .underline {
+        text-decoration: underline;
+      }
+      .sky {
+        color: $sky;
+      }
+      .link_btn {
+        display: inline-flex;
+        background-image: linear-gradient(90deg, #434bba, #6d3a88);
+        padding: 1rem 2rem;
+        border-radius: 0.5rem;
+        text-decoration: none;
+        color: $white;
+        margin-top: 30px;
+        margin-left: 1.25rem;
+
+        img {
+          width: 4rem;
+        }
+        p {
+          font-size: 1.5rem;
+          line-height: 2rem;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
