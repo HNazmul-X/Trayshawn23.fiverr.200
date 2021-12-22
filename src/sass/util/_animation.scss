@@ -1,0 +1,11 @@
+@mixin zoom-in-out($in: 0.3, $out: 1, $timing: 1s,$count:infinite) {
+    animation: zoom-in-out $timing alternate $count;
+    @keyframes zoom-in-out {
+        from {
+            transform: scale($in);
+        }
+        to {
+            transform: scale($out);
+        }
+    }
+}

@@ -1,0 +1,6 @@
+@use "./color" as c;
+
+body,html{
+    background: c.$body-color;
+    overflow-x: hidden;
+}

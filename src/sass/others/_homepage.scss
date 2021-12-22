@@ -1,5 +1,49 @@
 @use "../util" as *;
 
-body{
-   background: $body-color;
+body {
+    background: $body-color;
+}
+
+#header {
+    .header-video {
+        width: 100%;
+        min-height: 100vh;
+        position: relative;
+        overflow: hidden;
+
+        .header-video__video {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 1920px;
+            height: 1080px;
+        }
+
+        .header-video__button-cover {
+            width: 100%;
+            position: absolute;
+            bottom: 0px;
+            display: flex;
+            justify-content: center;
+            .header-video__button-overlay {
+                padding: 1.5rem 4rem;
+                background: rgba(255, 255, 255, 0.116);
+                border-radius: 1rem;
+                margin-bottom: 20px;
+                backdrop-filter: blur(10px);
+                .sold-out-button {
+                    @include pink-navyBlue-gd-button();
+                    padding: 24px 40px;
+                    font-size: 80px;
+                    font-weight: 900;
+                    border-radius: 1rem;
+                    text-transform: uppercase;
+                    background:linear-gradient( to right , $navy-blue,darken($indigo,20)) ;
+                    @include zoom-in-out(0.8,1,0.8s);
+                    animation-timing-function: linear;
+                }
+            }
+        }
+    }
 }
