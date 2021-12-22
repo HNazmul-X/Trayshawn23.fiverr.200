@@ -91,3 +91,62 @@ body {
         }
     }
 }
+
+
+/* Mint Information section */
+#mint-information{
+
+    .public-scale-card{
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        margin-bottom: 30px;
+        .number{
+            background: url("https://www.meta-legends.com/img/border-gradient.e65c189e.svg") no-repeat center / cover;
+            height: 70px;
+            padding: 0;
+            width: 69px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            h1{ 
+                font-size: 50px;
+                margin-bottom: 0px;
+
+            }
+        }
+
+        .desc{
+            margin-left:15px ;
+            *{
+                margin-bottom: 0px;
+            }
+        }
+    }
+
+
+    .mint-information-slider{
+        .mint-information-slider__wrapper{
+            .mint-information-slider__slider{
+                padding: 5rem 0px;
+                .swiper-slide{
+                    transition: 0.3s;
+                    user-select: none;
+                }
+
+                .swiper-slide.swiper-slide-active{
+                    transform: scale(1.2);
+                    position: relative;
+                    z-index: 1;
+                    @include md{
+                        transform: scale(1);
+                    }
+                    #mint-information-card{
+                        box-shadow: $pink-sm-shadow;
+                    }
+                }
+            }
+        }
+    }
+
+}

@@ -64,7 +64,7 @@ const Header = () => {
                 <div className="py-5">
                     <div className="container-xxl px-4 mx-3 mx-lg-auto py-5">
                         <div className="row align-items-center image-text">
-                            <div className="col-lg-6 order-1 order-lg-0 mt-5 mt-lg-0 text-center">
+                            <div className="col-lg-6 order-1 order-lg-0 mt-5 mt-lg-0 text-lg-start text-center">
                                 <div className="title mb-5">
                                     <h1 className="fw-900 mb-0">{openseaData.header[0]}</h1>
                                     <h1 className="fw-800">{openseaData.header[1]}</h1>

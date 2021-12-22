@@ -1,0 +1,44 @@
+@use "../util" as *;
+
+#mint-information-card {
+    background: $navy-grey;
+    border-radius: 20px;
+    @include lg {
+        border-radius: 10px;
+    }
+    .card__wrapper {
+        padding: 20px;
+        @include lg {
+            padding: 15px;
+        }
+        .card__image {
+            
+            background: var(--bg-image) top center / cover;;
+            .image__png {
+                width: 100%;
+            }
+        }
+
+        .card__body {
+            text-align: center;
+            --color: #14ffec;
+            h1.title {
+                color: var(--color);
+                font-weight: lighter;
+                font-size: 48px;
+                @include lg {
+                    font-size: 30px;
+                }
+            }
+            .color {
+                color: var(--color);
+            }
+            .short-desc {
+                font-size: 20px;
+                @include lg {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

@@ -1,5 +1,6 @@
 @use  "./util/" as *;
 @use "./others" as *;
+@use  "./components" as *;
 
 .pink-navyBlue-gd-btn{
     @include pink-navyBlue-gd-button;

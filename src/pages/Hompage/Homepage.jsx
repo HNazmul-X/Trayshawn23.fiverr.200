@@ -1,11 +1,12 @@
 import React from 'react';
-import Navbar from '../../components/Navbar/Navbar';
 import Header from './sections/Header';
+import MintInformation from './sections/MintInformation';
 
 const Homepage = () => {
     return (
         <>
             <Header/>
+            <MintInformation/>
         </>
     );
 };
