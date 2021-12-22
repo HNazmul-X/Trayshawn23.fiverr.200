@@ -6,36 +6,36 @@ $lg: 992px;
 $xl: 1200px;
 $xxl: 1400px;
 
-@mixin xsm {
-    @media screen and (max-width: $xsm) {
+@mixin xsm($breakpoint:$xsm) {
+    @media screen and (max-width: $breakpoint) {
         @content;
     }
 }
 
-@mixin sm {
-    @media screen and (max-width: $sm) {
+@mixin sm ($breakpoint:$sm) {
+    @media screen and (max-width: $breakpoint) {
         @content;
     }
 }
 
-@mixin md {
-    @media screen and (max-width: $md) {
+@mixin md($breakpoint:$md) {
+    @media screen and (max-width: $breakpoint) {
         @content;
     }
 }
 
-@mixin lg {
-    @media screen and (max-width: $lg) {
+@mixin lg ($breakpoint:$lg) {
+    @media screen and (max-width: $breakpoint) {
         @content;
     }
 }
-@mixin xl {
-    @media screen and (max-width: $xl) {
+@mixin xl ($breakpoint:$xl){
+    @media screen and (max-width: $breakpoint) {
         @content;
     }
 }
-@mixin xxl {
-    @media screen and (max-width: $xxl) {
+@mixin xxl ($breakpoint:$xxl) {
+    @media screen and (max-width: $breakpoint) {
         @content;
     }
 }
