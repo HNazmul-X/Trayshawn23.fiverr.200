@@ -1,2 +1,6 @@
 @use  "./util/" as *;
-@use "./others/homepage";
+@use "./others" as *;
+
+.pink-navyBlue-gd-btn{
+    @include pink-navyBlue-gd-button;
+}

@@ -1,1 +1,11 @@
-$color1:red;
+$body-color:#120d2b;
+$pink:#cf4a7a;
+$navy-blue:#6d3a88;
+$white:#fff;
+$indigo:#5d40ae;
+$sky:#10a6f8;
+$black:#000;
+$pink-navyBlue-gd:linear-gradient(90deg, rgb(67, 75, 186), rgb(109, 58, 136));
+$white-text-shadow:0 0 32px transparentize($white,0.7);
+$pink-text-shadow:0 0 32px transparentize($pink,0.7);
+$pink-sm-shadow:0 0 5px #9d55c480, 0 0 10px #8a46af, 0 0 25px #6d3a8880;

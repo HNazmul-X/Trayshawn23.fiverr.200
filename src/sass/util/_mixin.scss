@@ -1,0 +1,65 @@
+@use "./color" as c;
+$xsm: 360px;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+
+@mixin xsm {
+    @media screen and (max-width: $xsm) {
+        @content;
+    }
+}
+
+@mixin sm {
+    @media screen and (max-width: $sm) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media screen and (max-width: $md) {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media screen and (max-width: $lg) {
+        @content;
+    }
+}
+@mixin xl {
+    @media screen and (max-width: $xl) {
+        @content;
+    }
+}
+@mixin xxl {
+    @media screen and (max-width: $xxl) {
+        @content;
+    }
+}
+
+//button mixins
+@mixin  gridBtn {
+    display: inline-flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 7px;
+    margin: 5px 0px;
+}
+
+@mixin pink-navyBlue-gd-button {
+    background: c.$pink-navyBlue-gd;
+    color: white;
+    font-weight: 600;
+    padding: 10px 15px;
+    @include gridBtn();
+
+    &:hover {
+        box-shadow: 0 0 32px transparentize($color: c.$navy-blue, $amount: 0);
+        transition: 0.5s;
+    }
+}
