@@ -1,7 +1,9 @@
-import { InlineIcon } from '@iconify/react';
-import React from 'react';
+import { InlineIcon } from "@iconify/react";
+import React, { useState } from "react";
 
 const Navbar = () => {
+    const [isContentShow, SetIsContentShow] = useState(false);
+
     return (
         <div>
             <nav id="navbar">
@@ -9,8 +11,14 @@ const Navbar = () => {
                     <div className="navbar-brand">
                         <img src="https://www.meta-legends.com/img/title-logo.1c7a7a86.svg" alt="" />
                     </div>
-                    <div className="navbar-content">
-                        <div className="navbar-items">
+                    <div className="navbar-opener-icon ms-auto mx-md-auto" onClick={() => SetIsContentShow(!isContentShow)}>
+                        <InlineIcon icon="la:bars" />
+                    </div>
+                    <div className={`navbar-closer-icon d-xl-none  ${isContentShow?"active":""}`} onClick={() => SetIsContentShow(!isContentShow)}>
+                        <InlineIcon icon="la:times" />
+                    </div>
+                    <div className={`navbar-content ${isContentShow ? "active" : ""}`}>
+                        <div className={`navbar-items ${isContentShow ? "show" : ""}`}>
                             <ul class="nav">
                                 <li class="nav-item">
                                     <a class="nav-link active" href="#">
@@ -29,7 +37,7 @@ const Navbar = () => {
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">
-                                        Information 
+                                        Information
                                     </a>
                                 </li>
                             </ul>
@@ -63,7 +71,7 @@ const Navbar = () => {
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link " href="#">
-                                    <InlineIcon icon="akar-icons:discord-fill" className="me-2" />
+                                        <InlineIcon icon="akar-icons:discord-fill" className="me-2" />
                                         discord
                                     </a>
                                 </li>
