@@ -1,0 +1,173 @@
+@use "../util" as *;
+
+#faqArea {
+    padding: 150px 0 0;
+
+    .fTitle {
+        text-shadow: 0 0 32px rgb(159 55 208 / 79%);
+        font-size: 6rem;
+        line-height: 1;
+        margin-bottom: 4rem;
+        font-weight: 700;
+        text-align: center;
+        position: relative;
+
+        span {
+            color: #cf4a7a;
+        }
+    }
+    .fTitle::before {
+        position: absolute;
+        content: '';
+        background: url(../../Assets/Images/crown.f3383635.svg) no-repeat;
+        background-size: contain;
+        top: 0;
+        left: -40px;
+        width: 5rem;
+        height: 4rem;
+        opacity: .5;
+        cursor: pointer;
+    }
+    @include sm{
+        .fTitle::before {
+            display: none;
+        }
+    }
+
+    .faqInner {
+        position: relative;
+        padding-left: 8.5rem;
+        padding-right: 8.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 40;
+        transition: all .5s ease-in-out;
+
+        .intro {
+            color: white;
+            margin-top: 1.75rem;
+            margin-bottom: 1.75rem;
+            font-family: Bronova,sans-serif;
+            overflow-y: hidden;
+            width: 100%;
+            transition: all .5s ease-in-out;
+
+            .titleWrapper {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                position: relative;
+                padding: 1rem 4rem;
+                cursor: pointer;
+                /* background-image: linear-gradient(to right , #434bba, #6d3a88); */
+            
+                h2 {
+                    font-size: 1.25rem;
+                    line-height: 1.75rem;
+                    font-weight: 700;
+                    z-index: 20;
+                    margin-bottom: 0;
+                    transition: all .5s ease-in-out;
+                }
+
+                button {
+                    background: #120D2B;
+                    padding: 13px 18px;
+                    border-width: 1px;
+                    border-style: solid;
+                    border-image: linear-gradient(to right, #434bba, #6d3a88) 1;
+                    transition: all .5s ease-in-out;
+
+                    img {
+                        width: 1.2rem;
+                    }
+                }
+            }
+            @include sm{
+                .titleWrapper {
+                    justify-content: space-between;
+                    padding: 1rem 2rem;
+                    cursor: pointer;
+                    /* background-image: linear-gradient(to right , #434bba, #6d3a88); */
+                }
+            }
+            .titleWrapper:hover { 
+                h2 {
+                 text-shadow: 0 0 10px #fff;
+                }
+                button {
+                    box-shadow: 0 0 10px rgb(159 55 208 / 79%);
+                }
+            }
+
+            .subTitle {
+                font-size: 1.25rem;
+                line-height: 1.75rem;
+                padding: 1.25rem 4rem;
+                background-color: rgba(27,21,62, 1);
+                height: auto;
+
+                a {
+                    color: #fff;
+                    text-decoration: none;
+                }
+                @include sm{
+                    a {
+                        text-align: justify;
+                    }
+                }
+            }
+            @include sm {
+                .subTitle {
+                    padding: 1.25rem 2rem;
+                    text-align: justify;
+                }
+            }
+        }
+        @include sm{
+            overflow-x: scroll;
+        }
+    }
+    @include md{
+        .faqInner {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+    }
+    @include sm{
+        .faqInner {
+            padding-left: .2rem;
+            padding-right: .2rem;
+        }
+    }
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

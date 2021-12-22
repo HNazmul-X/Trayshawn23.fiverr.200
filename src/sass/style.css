@@ -424,6 +424,305 @@ body {
   }
 }
 
+#team {
+  padding: 100px 0;
+}
+#team .teamInner {
+  text-align: center;
+  margin: 0 auto;
+  color: #fff;
+}
+#team .teamInner .teamTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+#team .teamInner .teamTitle .subTitle {
+  font-size: 3rem;
+  line-height: 1;
+  color: #cf4a7a;
+  /* background-image: linear-gradient(to top left,#cf4a7a, #6d3a88); */
+}
+#team .teamInner .teamTitle .title {
+  font-size: 6rem;
+  line-height: 1;
+  font-weight: 700;
+  text-shadow: 0 0 32px rgba(159, 55, 208, 0.79);
+  color: #cf4a7a;
+  /* background-image: linear-gradient(to top left,#cf4a7a, #6d3a88); */
+}
+#team .teamInner .description {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-bottom: 5rem;
+}
+@media screen and (max-width: 768px) {
+  #team .teamInner .description {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  #team .teamInner .description {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+#team .teamCard .tCard {
+  background-color: none;
+  margin-bottom: 20px;
+  position: relative;
+}
+#team .teamCard .tCard .cardInner {
+  position: relative;
+}
+#team .teamCard .tCard .hiddenArea {
+  position: absolute;
+  font-size: 1rem;
+  top: -2px;
+  left: 50%;
+  line-height: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+}
+@media screen and (max-width: 576px) {
+  #team .teamCard .tCard .hiddenArea {
+    text-align: left;
+  }
+}
+#team .teamCard .tCard .hiddenArea:not(:last-of-type) {
+  text-align: left;
+}
+@media screen and (max-width: 768px) {
+  #team .teamCard .tCard .hiddenArea:not(:last-of-type) {
+    margin-right: 130px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #team .teamCard .tCard .hiddenArea:not(:last-of-type) {
+    margin-right: 130px;
+  }
+}
+#team .teamCard .tCard .cardInner .info {
+  position: relative;
+  transform: rotateX(0deg) rotateY(0deg);
+}
+#team .teamCard .tCard .cardInner .info img {
+  filter: brightness(1);
+  max-width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 768px) {
+  #team .teamCard .tCard .cardInner .info img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 576px) {
+  #team .teamCard .tCard .cardInner .info img {
+    width: 100%;
+  }
+}
+#team .teamCard .tCard .cardInner .info .infoInner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 66.666667%;
+  margin: 1rem;
+}
+#team .teamCard .tCard .cardInner .info .infoInner h1 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 900;
+  color: #5d40ae;
+  font-family: Montserrat, sans-serif;
+}
+#team .teamCard .tCard .cardInner .info .infoInner h2 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  color: #5d40ae;
+  font-family: Montserrat, sans-serif;
+}
+#team .teamCard .tCard .cardInner .info .socialIcon {
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  left: 0;
+}
+#team .teamCard .tCard .cardInner .info .socialIcon a {
+  background: #5d40ae;
+  padding: 1rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  margin: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.5), 0 15px 12px rgba(0, 0, 0, 0.42);
+}
+#team .teamCard .tCard .cardInner .info .socialIcon a:nth-child(7) {
+  background: none;
+}
+@media screen and (max-width: 576px) {
+  #team .teamCard .tCard .cardInner .info {
+    flex-direction: column;
+  }
+}
+#team .teamCard .tCard .shadowImg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  transform: rotateX(0deg) rotateY(0deg);
+}
+@media screen and (max-width: 576px) {
+  #team .teamCard .tCard .shadowImg {
+    display: none;
+  }
+}
+@media screen and (max-width: 576px) {
+  #team .teamCard {
+    margin-bottom: 40px;
+  }
+}
+
+#faqArea {
+  padding: 150px 0 0;
+}
+#faqArea .fTitle {
+  text-shadow: 0 0 32px rgba(159, 55, 208, 0.79);
+  font-size: 6rem;
+  line-height: 1;
+  margin-bottom: 4rem;
+  font-weight: 700;
+  text-align: center;
+  position: relative;
+}
+#faqArea .fTitle span {
+  color: #cf4a7a;
+}
+#faqArea .fTitle::before {
+  position: absolute;
+  content: "";
+  background: url(../../Assets/Images/crown.f3383635.svg) no-repeat;
+  background-size: contain;
+  top: 0;
+  left: -40px;
+  width: 5rem;
+  height: 4rem;
+  opacity: 0.5;
+  cursor: pointer;
+}
+@media screen and (max-width: 576px) {
+  #faqArea .fTitle::before {
+    display: none;
+  }
+}
+#faqArea .faqInner {
+  position: relative;
+  padding-left: 8.5rem;
+  padding-right: 8.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 40;
+  transition: all 0.5s ease-in-out;
+}
+#faqArea .faqInner .intro {
+  color: white;
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem;
+  font-family: Bronova, sans-serif;
+  overflow-y: hidden;
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+}
+#faqArea .faqInner .intro .titleWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  /* background-image: linear-gradient(to right , #434bba, #6d3a88); */
+}
+#faqArea .faqInner .intro .titleWrapper h2 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  z-index: 20;
+  margin-bottom: 0;
+  transition: all 0.5s ease-in-out;
+}
+#faqArea .faqInner .intro .titleWrapper button {
+  background: #120D2B;
+  padding: 13px 18px;
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(to right, #434bba, #6d3a88) 1;
+  transition: all 0.5s ease-in-out;
+}
+#faqArea .faqInner .intro .titleWrapper button img {
+  width: 1.2rem;
+}
+@media screen and (max-width: 576px) {
+  #faqArea .faqInner .intro .titleWrapper {
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    /* background-image: linear-gradient(to right , #434bba, #6d3a88); */
+  }
+}
+#faqArea .faqInner .intro .titleWrapper:hover h2 {
+  text-shadow: 0 0 10px #fff;
+}
+#faqArea .faqInner .intro .titleWrapper:hover button {
+  box-shadow: 0 0 10px rgba(159, 55, 208, 0.79);
+}
+#faqArea .faqInner .intro .subTitle {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  padding: 1.25rem 4rem;
+  background-color: #1b153e;
+  height: auto;
+}
+#faqArea .faqInner .intro .subTitle a {
+  color: #fff;
+  text-decoration: none;
+}
+@media screen and (max-width: 576px) {
+  #faqArea .faqInner .intro .subTitle a {
+    text-align: justify;
+  }
+}
+@media screen and (max-width: 576px) {
+  #faqArea .faqInner .intro .subTitle {
+    padding: 1.25rem 2rem;
+    text-align: justify;
+  }
+}
+@media screen and (max-width: 576px) {
+  #faqArea .faqInner {
+    overflow-x: scroll;
+  }
+}
+@media screen and (max-width: 768px) {
+  #faqArea .faqInner {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  #faqArea .faqInner {
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+  }
+}
+
 #mint-information-card {
   background: #26203e;
   border-radius: 20px;
