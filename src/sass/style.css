@@ -768,6 +768,11 @@ body {
   width: 100%;
   position: relative;
 }
+@media screen and (max-width: 576px) {
+  .roadmap_section {
+    padding-top: 4rem;
+  }
+}
 .roadmap_section article .absolute {
   position: absolute;
 }
@@ -822,10 +827,60 @@ body {
   padding-bottom: 5rem;
 }
 .roadmap_section article .bg_process_img div {
-  background-position: center 0%;
-  background-image: url("https://www.meta-legends.com/img/progress-bar.a3dd127b.png");
+  background-position-x: center;
+  background-position-y: 0%;
+  background-image: url("../Assets/Images/process_bar.png");
   height: 70px;
   max-width: 600px;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .roadmap_section article .bg_process_img div {
+    height: 55px;
+    max-width: 600px;
+    background-position-x: left;
+    background-size: 100%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .roadmap_section article .bg_process_img div {
+    height: 53px;
+  }
+}
+@media screen and (max-width: 495px) {
+  .roadmap_section article .bg_process_img div {
+    height: 50px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .roadmap_section article .bg_process_img div {
+    height: 45px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .roadmap_section article .bg_process_img div {
+    height: 40px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .roadmap_section article .bg_process_img div {
+    height: 35px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .roadmap_section article .bg_process_img div {
+    height: 33px;
+  }
+}
+@media screen and (max-width: 330px) {
+  .roadmap_section article .bg_process_img div {
+    height: 30px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .roadmap_section article .bg_process_img div {
+    height: 20px;
+  }
 }
 .roadmap_section article .bg_process_img .bold {
   font-weight: 700;
@@ -836,6 +891,11 @@ body {
   color: #fff;
   padding-left: 1.25rem;
   margin-bottom: 30px;
+}
+@media screen and (max-width: 576px) {
+  .roadmap_section article .bg_process_img p {
+    font-size: 1rem;
+  }
 }
 .roadmap_section article .bg_process_img p a {
   text-decoration: none;
@@ -856,14 +916,34 @@ body {
   color: #fff;
   margin-top: 30px;
   margin-left: 1.25rem;
+  transition: all 0.4s ease;
+}
+.roadmap_section article .bg_process_img .link_btn:hover {
+  box-shadow: 0px 0px 34px 3px #6d3a88;
+}
+@media screen and (max-width: 768px) {
+  .roadmap_section article .bg_process_img .link_btn {
+    padding: 0.5rem 1rem;
+  }
 }
 .roadmap_section article .bg_process_img .link_btn img {
   width: 4rem;
+}
+@media screen and (max-width: 768px) {
+  .roadmap_section article .bg_process_img .link_btn img {
+    width: 3rem;
+  }
 }
 .roadmap_section article .bg_process_img .link_btn p {
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  .roadmap_section article .bg_process_img .link_btn p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 .trailar_video_section article h1 {
@@ -936,6 +1016,10 @@ body {
   background-image: linear-gradient(90deg, #434bba, #6d3a88);
   padding: 1rem 2rem;
   border-radius: 0.5rem;
+  transition: all 0.4s ease;
+}
+.trailar_video_section article .link_wrapper .link_btn:hover {
+  box-shadow: 0px 0px 34px 3px #6d3a88;
 }
 @media screen and (max-width: 992px) {
   .trailar_video_section article .link_wrapper .link_btn {
@@ -972,6 +1056,95 @@ body {
     font-size: 1rem;
     line-height: 1.25rem;
   }
+}
+
+.footer_section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  position: relative;
+}
+.footer_section .icon {
+  width: 5rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 5rem;
+}
+.footer_section .content_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.footer_section .content_wrapper .logo {
+  width: 10rem;
+}
+@media screen and (max-width: 768px) {
+  .footer_section .content_wrapper .logo {
+    width: 8rem;
+  }
+}
+.footer_section .content_wrapper .footer_link {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .footer_section .content_wrapper .footer_link {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .footer_section .content_wrapper .footer_link .f_link {
+    flex-direction: column;
+    width: 100%;
+    gap: 1.25rem;
+  }
+}
+.footer_section .content_wrapper .footer_link a {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  text-decoration: none;
+  color: #fff;
+  opacity: 0.6;
+  text-align: center;
+  display: block;
+  transition: all 0.4s linear;
+}
+.footer_section .content_wrapper .footer_link a:hover {
+  opacity: 1;
+}
+.footer_section .content_wrapper .footer_link .underline {
+  text-decoration: underline;
+}
+.footer_section .content_wrapper .social_link {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .footer_section .content_wrapper .social_link {
+    gap: 2.5rem;
+  }
+}
+.footer_section .content_wrapper .social_link a img {
+  width: 3rem;
+  opacity: 0.7;
+  transition: all 0.4s linear;
+}
+@media screen and (max-width: 768px) {
+  .footer_section .content_wrapper .social_link a img {
+    width: 2.5rem;
+  }
+}
+.footer_section .content_wrapper .social_link a img:hover {
+  opacity: 1;
 }
 
 #mint-information-card {

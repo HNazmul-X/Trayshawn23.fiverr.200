@@ -1,40 +1,37 @@
-
 @use "../util" as *;
 
 .metaver_section {
   width: 100%;
-    img {
-      max-width: 100%;
-      height: auto;
-    }
-    p {
-      padding-left: 9rem;
-      padding-right: 9rem;
-      font-size: 1.175rem;
-      line-height: 1.75rem;
-      color: $white;
-      margin-bottom: 30px;
-      @include lg{
-        padding-left: 1rem;
-        padding-right: 1rem;
-        text-align: center;
-        margin-bottom: 20px;
-      }
-      @include md{
-        margin-bottom: 16px;
-        font-size: 1rem;
-      }
-      .bold {
-        font-weight: 700;
-      }
-      .underline {
-        text-decoration: underline;
-      }
-      a {
-        text-decoration: none;
-        color: $sky;
-      }
-    }    
-    
+  img {
+    max-width: 100%;
+    height: auto;
   }
-  
+  p {
+    padding-left: 9rem;
+    padding-right: 9rem;
+    font-size: 1.175rem;
+    line-height: 1.75rem;
+    color: $white;
+    margin-bottom: 30px;
+    @include lg {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    @include md {
+      margin-bottom: 16px;
+      font-size: 1rem;
+    }
+    .bold {
+      font-weight: 700;
+    }
+    .underline {
+      text-decoration: underline;
+    }
+    a {
+      text-decoration: none;
+      color: $sky;
+    }
+  }
+}

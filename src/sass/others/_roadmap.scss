@@ -4,6 +4,9 @@
   padding-top: 9rem;
   width: 100%;
   position: relative;
+  @include sm {
+    padding-top: 4rem;
+  }
   article {
     //  Right side absolute image
     .absolute {
@@ -45,10 +48,10 @@
       font-weight: 700;
       color: $white;
       opacity: 0.665;
-      @include md{
+      @include md {
         width: 3rem;
-      height: 3rem;
-      font-size: 1rem;
+        height: 3rem;
+        font-size: 1rem;
       }
     }
     .process_bar_line {
@@ -60,10 +63,42 @@
       width: 100%;
       padding-bottom: 5rem;
       div {
-        background-position: center 0%;
-        background-image: url("https://www.meta-legends.com/img/progress-bar.a3dd127b.png");
+        background-position-x: center;
+        background-position-y: 0%;
+        background-image: url("../Assets/Images/process_bar.png");
         height: 70px;
         max-width: 600px;
+        width: 100%;
+        @include md {
+          height: 55px;
+          max-width: 600px;
+          background-position-x: left;
+          background-size: 100%;
+        }
+        @include sm {
+          height: 53px;
+        }
+        @media screen and (max-width: 495px) {
+          height: 50px;
+        }
+        @media screen and (max-width: 460px) {
+          height: 45px;
+        }
+        @media screen and (max-width: 420px) {
+          height: 40px;
+        }
+        @media screen and (max-width: 390px) {
+          height: 35px;
+        }
+        @media screen and (max-width: 350px) {
+          height: 33px;
+        }
+        @media screen and (max-width: 330px) {
+          height: 30px;
+        }
+        @media screen and (max-width: 300px) {
+          height: 20px;
+        }
       }
       .bold {
         font-weight: 700;
@@ -74,6 +109,9 @@
         color: $white;
         padding-left: 1.25rem;
         margin-bottom: 30px;
+        @include sm {
+          font-size: 1rem;
+        }
         a {
           text-decoration: none;
           color: $sky;
@@ -94,14 +132,28 @@
         color: $white;
         margin-top: 30px;
         margin-left: 1.25rem;
+        transition: all 0.4s ease;
+        &:hover {
+          box-shadow: 0px 0px 34px 3px #6d3a88;
+        }
+        @include md {
+          padding: 0.5rem 1rem;
+        }
 
         img {
           width: 4rem;
+          @include md {
+            width: 3rem;
+          }
         }
         p {
           font-size: 1.5rem;
           line-height: 2rem;
           font-weight: 700;
+          @include md {
+            font-size: 1rem;
+            line-height: 1.5rem;
+          }
         }
       }
     }

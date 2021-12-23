@@ -31,16 +31,29 @@ export default function Metavers() {
             as well as events like concerts, festivals etc.
           </p>
           <p>
-            You will also have the possibility to <span className="bold">generate income</span>{" "}
-            in this Metaverse thanks to the <span className="bold">Play to Earn technology</span>
-            .
+            You will also have the possibility to{" "}
+            <span className="bold">generate income</span> in this Metaverse
+            thanks to the <span className="bold">Play to Earn technology</span>.
           </p>
-          <p className="mb-0">You will be the <span className="bold">owner of your own Land, house, vehicles, and several other incredible assets !</span></p>
-          <p>We are also working on a proprietary system where a land will have a real value (we are very well aware and sensitive about supply and ownership problems in virtual worlds, and definitely aim to solve this).</p>
-          <p>Discover all the possibilities that Meta Life will propose by clicking there.</p>
+          <p className="mb-0">
+            You will be the{" "}
+            <span className="bold">
+              owner of your own Land, house, vehicles, and several other
+              incredible assets !
+            </span>
+          </p>
+          <p>
+            We are also working on a proprietary system where a land will have a
+            real value (we are very well aware and sensitive about supply and
+            ownership problems in virtual worlds, and definitely aim to solve
+            this).
+          </p>
+          <p>
+            Discover all the possibilities that Meta Life will propose by
+            clicking there.
+          </p>
         </div>
       </article>
     </section>
-    // <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores molestias illum iste sunt voluptate dicta obcaecati a saepe nam sequi odit optio magnam architecto ipsam veniam, numquam accusantium unde hic!</p>
   );
 }

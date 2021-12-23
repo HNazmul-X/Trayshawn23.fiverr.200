@@ -6,6 +6,7 @@ import Faq from '../../components/Faq/Faq';
 import TrailerVideo from './../../components/TrailerVideo/TrailerVideo';
 import Metavers from './../../components/Metavers/Metavers';
 import Roadmap from './../../components/Roadmap/Roadmap';
+import Footer from './../../components/Footer/Footer';
 
 const Homepage = () => {
     return (
@@ -17,6 +18,7 @@ const Homepage = () => {
             <Roadmap />
             <Faq />
             <OurTeam />
+            <Footer />
         </>
     );
 };

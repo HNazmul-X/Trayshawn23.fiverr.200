@@ -15,7 +15,7 @@ export default function Roadmap() {
         </div>
         <div>
           {roadmapData.map((data, index) => (
-            <SingleRoadMap key={index} data={data} />
+            <SingleRoadMap data={data} key={index} />
           ))}
         </div>
       </article>

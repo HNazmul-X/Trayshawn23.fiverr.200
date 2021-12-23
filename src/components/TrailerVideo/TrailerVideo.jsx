@@ -7,7 +7,7 @@ export default function TrailerVideo() {
       <article>
         <div className="container">
           <h1>Trailer video</h1>
-        </div> 
+        </div>
         <div className="iframe_wrapper">
           <iframe
             src="https://player.vimeo.com/video/649166035?h=c3df0b9282"
@@ -19,12 +19,18 @@ export default function TrailerVideo() {
           ></iframe>
         </div>
         <div className="mt-xl-5 mt-lg-4">
-          <div  className="link_wrapper container">
-          <a href="#" className="link_btn">
-            <img className="me-4" src={descoverimg} alt="DISCOVER META-LIFE" />
-            <p>DISCOVER META-LIFE</p>
-          </a>
-          <a href="#" className="link_btn"><p>LITE PAPER META-LIFE</p></a>
+          <div className="link_wrapper container">
+            <a href="#" className="link_btn">
+              <img
+                className="me-4"
+                src={descoverimg}
+                alt="DISCOVER META-LIFE"
+              />
+              <p>DISCOVER META-LIFE</p>
+            </a>
+            <a href="#" className="link_btn">
+              <p>LITE PAPER META-LIFE</p>
+            </a>
           </div>
         </div>
       </article>

@@ -109,10 +109,11 @@ export const roadmapData = [
     progress: 100,
     text: [
       <>
-     <p className="mb-0 bold">The ultimate purpose of the Meta Legends :</p>
-      <p>Creation of our Metaverse <span className="bold sky">META-LIFE</span></p>
-       </>,
+        <p className="mb-0 bold">The ultimate purpose of the Meta Legends :</p>
+        <p>
+          Creation of our Metaverse <span className="bold sky">META-LIFE</span>
+        </p>
+      </>,
     ],
   },
- 
 ];

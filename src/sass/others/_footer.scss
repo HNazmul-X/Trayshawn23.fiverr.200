@@ -1,0 +1,85 @@
+@use "../util" as *;
+
+.footer_section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  position: relative;
+
+  .icon {
+    width: 5rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 5rem;
+  }
+  .content_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    .logo {
+      width: 10rem;
+      @include md {
+        width: 8rem;
+      }
+    }
+    .footer_link {
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 100%;
+      @include md {
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+      }
+      .f_link {
+        @include lg {
+          flex-direction: column;
+          width: 100%;
+          gap: 1.25rem;
+        }
+      }
+      a {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        text-decoration: none;
+        color: $white;
+        opacity: 0.6;
+        text-align: center;
+        display: block;
+        transition: all 0.4s linear;
+        &:hover {
+          opacity: 1;
+        }
+      }
+      .underline {
+        text-decoration: underline;
+      }
+    }
+    .social_link {
+      display: flex;
+      gap: 4rem;
+      align-items: center;
+      justify-content: center;
+      @include md {
+        gap: 2.5rem;
+      }
+      a {
+        img {
+          width: 3rem;
+          opacity: 0.7;
+          transition: all 0.4s linear;
+          @include md {
+            width: 2.5rem;
+          }
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
