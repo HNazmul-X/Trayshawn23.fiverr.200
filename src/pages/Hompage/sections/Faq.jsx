@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 // import './Faq.css'
-import plus from '../../Assets/Images/plus.55e1a08e.svg';
+import plus from '../../../Assets/Images/plus.55e1a08e.svg';
 
 const Faq = () => {
     const [toggle, setToggle] = useState('');

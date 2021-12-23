@@ -6,7 +6,7 @@ import "swiper/css/navigation";
 import MintInformationSliderCard from "../../../components/MintInformationSliderCard/MintInformationSliderCard";
 import { mintInformationSliderData } from "../../../data/mintInformationData";
 
-SwiperCore.use([Pagination]);
+SwiperCore.use([Pagination,Navigation]);
 
 const MintInformation = () => {
     return (

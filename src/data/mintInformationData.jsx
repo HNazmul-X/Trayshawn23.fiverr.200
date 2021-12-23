@@ -9,7 +9,7 @@ export const mintInformationSliderData = [
         color: "#c7d4f5",
         text: (
             <>
-                NFT + <span class="fw-bold">1 Vehicle</span> + 1 Pet + 1 Armor in the metaverse
+                NFT + <span class="fw-bold color">1 Vehicle</span> + 1 Pet + 1 Armor in the metaverse
             </>
         ),
     },
@@ -23,7 +23,7 @@ export const mintInformationSliderData = [
         color: "#eabe29",
         text: (
             <>
-                NFT + <span class="font-bold text-color">1 Land (3 x 3)</span> + 1 House + 1 Vehicle + 1 Pet + 1 Armor in the metaverse
+                NFT + <span class="fw-bold color">1 Land (3 x 3)</span> + 1 House + 1 Vehicle + 1 Pet + 1 Armor in the metaverse
             </>
         ),
     },
