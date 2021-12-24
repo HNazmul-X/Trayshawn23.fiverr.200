@@ -14,9 +14,9 @@ function Footer() {
             <img src={logo} alt="Icon" className="logo" />
           </div>
           <div className="footer_link">
-            <div className="row f_link">
+            <div className=" f_link">
               {footerLinkData.map((data, index) => (
-                <div key={index} className="col">
+                <div key={index} className="">
                   <div>
                     {data.extranalLink ? (
                       <a
@@ -44,6 +44,7 @@ function Footer() {
               </a>
             ))}
           </div>
+          <p className="footer_text">©{new Date().getFullYear()} Meta-Legends. All rights reserved.</p>
         </div>
       </div>
     </footer>
