@@ -1,0 +1,51 @@
+/* TabSlider Card */
+@use  "../util/" as *;
+
+.tab-slider-card__cover{
+    padding: 0 5px;
+    .tab-slider-card{
+        padding: 10px ;
+        box-sizing: border-box;
+        border-radius: 999px;
+        position: relative;
+        cursor: pointer;
+        &.selected{
+            background: $navy-blue;
+            &::after{
+                background: $navy-blue;
+            }
+        }
+        &:hover{
+            &::after{
+                background: $navy-blue;
+            }
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            background: $white;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius:50% ;
+        }
+        .card__img{
+            text-align: center;
+            img{
+                height: 70px;
+                
+                padding: 10px;
+            }
+        }
+        .card__body{
+            text-align: center;
+            h5{
+                font-size: 18px;
+                text-align: center;
+                font-weight: 300;
+            }
+        }
+    }
+}
