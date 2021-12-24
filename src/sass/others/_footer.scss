@@ -2,7 +2,7 @@
 
 .footer_section {
   padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
   position: relative;
 
   .icon {
@@ -36,6 +36,13 @@
         margin-bottom: 2.5rem;
       }
       .f_link {
+        width: 100%;
+        display: flex;
+        column-gap: 30px;
+        row-gap: 20px;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
         @include lg {
           flex-direction: column;
           width: 100%;
@@ -79,6 +86,17 @@
             opacity: 1;
           }
         }
+      }
+    }
+    .footer_text {
+      margin-top: 2.5rem;
+      font-size: 1.25rem;
+      line-height: 1.75rem;
+      color: rgb(95, 91, 121);
+      text-align: center;
+      @include md {
+        font-size: 1rem;
+        margin-top: 1.8rem;
       }
     }
   }
