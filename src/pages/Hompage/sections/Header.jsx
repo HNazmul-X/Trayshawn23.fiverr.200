@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../../../components/Navbar/Navbar";
 import OPENSEA_RIGHT_IMAGE from "../../../Assets/Images/celestial.ee45254d.png";
+import Countdown from 'react-countdown';
 
 const Header = () => {
     const LgButton = ({ icon, text }) => {
@@ -13,19 +14,27 @@ const Header = () => {
     };
 
     const openseaData = {
-        header: [<>12345 UNIQUE META LEGENDS</>, <>TO SAVE HUMANITY</>],
+        header: [<>12345 UNIQUE META CARDS</>, <>TO SAVE HUMANITY</>],
         desc: [
-            "Meta Legends represent a collection of 12345 legends categorized by level of rarity and generated with hundreds of elements.",
-            "The Legends are stored as ERC-721 tokens on the Ethereum blockchain and hosted on IPFS.",
+            "META CARDS represent a collection of 12345 Cards categorized by level of rarity and generated with hundreds of elements.",
+            "The Cards are stored as ERC-721 tokens on the Ethereum blockchain and hosted on IPFS.",
             <>
                 Our goal is to create a complete ecosystem. First, we are developing an application ( Meta-Connect ) that will connect all of our community members. You will be able to locate each
                 other on the map, store your NFTs & get an estimation of their value.
             </>,
-            <>Then, we are going to develop our own Metaverse ( Meta-Life ). Within this Metaverse, you will be able to stack cryptos, own property, items, and explore the Meta Legends Universe.</>,
+            <>Then, we are going to develop our own Metaverse ( Meta-Life ). Within this Metaverse, you will be able to stack cryptos, own property, items, and explore the META CARDS Universe.</>,
             <>Our ambition with Meta Legend is to create an entertainment licence.</>,
             ,
         ],
     };
+
+    const renderer = ({ hours, minutes, seconds, completed }) => {
+        if (completed) {
+          return <span>MINT</span>;
+        } else {
+          return <span>0{hours}:0{minutes}:{seconds}</span>;
+        }
+      };
 
     return (
         <header id="header">
@@ -35,7 +44,8 @@ const Header = () => {
                 <div className="header-video__button-cover">
                     <div className="header-video__button-overlay">
                         <button className="sold-out-button font-akira">
-                            Sold <span className="outline-text font-akira ms-4">Out</span>
+                            {/* Sold <span className="outline-text font-akira ms-4">Out</span> */}
+                            <Countdown date={Date.now() + 20000} renderer={renderer} />
                         </button>
                     </div>
                 </div>
@@ -95,7 +105,7 @@ const Header = () => {
                                         fill="currentColor"
                                     />
                                 </svg>
-                                    LITE PAPER META LEGENDS
+                                    LITE PAPER META CARDS
                             </h2>
                         </div>
                     </div>

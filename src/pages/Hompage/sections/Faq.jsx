@@ -23,18 +23,18 @@ const Faq = () => {
                 <div className="faqInner">
                     <div className="intro">
                         <div className="titleWrapper" style={toggle === '1' ? {backgroundImage: 'linear-gradient(to right , #434bba, #6d3a88)'} : {backgroundImage: 'none'}} onClick={() => handleToggle('1')}>
-                            <h2 className='title'>How do I become a Meta Legend ?</h2>
+                            <h2 className='title'>How do I become a Meta Card ?</h2>
                             <button className='toggleBtn'>
                                 <img style={toggle === '1' ? {transform: 'rotate(45deg'} : {transform: 'translate(0px, 0px'}} src={plus} alt="" />
                             </button>
                         </div>
 
-                        {toggle === '1' && <p className="subTitle">Meta Legends will be available to mint at <a href="https://www.meta-legends.com/" target="_blank">https://www.meta-legends.com/</a></p>}
+                        {toggle === '1' && <p className="subTitle">Meta Cards will be available to mint at <a href="https://www.meta-Cards.com/" target="_blank">https://www.meta-Cards.com/</a></p>}
                     </div>
 
                     <div className="intro">
                         <div className="titleWrapper" style={toggle === '2' ? {backgroundImage: 'linear-gradient(to right , #434bba, #6d3a88)'} : {backgroundImage: 'none'}} onClick={() => handleToggle('2')}>
-                            <h2 className='title'>How many Meta Legends will be available ?</h2>
+                            <h2 className='title'>How many Meta Cards will be available ?</h2>
                             <button className='toggleBtn'>
                                 <img style={toggle === '2' ? {transform: 'rotate(45deg'} : {transform: 'translate(0px, 0px'}} src={plus} alt="" />
                             </button>
@@ -111,7 +111,7 @@ const Faq = () => {
 
                     <div className="intro">
                         <div className="titleWrapper"  style={toggle === '9' ? {backgroundImage: 'linear-gradient(to right , #434bba, #6d3a88)'} : {backgroundImage: 'none'}} onClick={() => handleToggle('9')}>
-                            <h2 className='title'>Do you have a long term roadmap ? What is the future of Meta Legends ?</h2>
+                            <h2 className='title'>Do you have a long term roadmap ? What is the future of Meta Cards ?</h2>
                             <button className='toggleBtn'>
                                 <img style={toggle === '9' ? {transform: 'rotate(45deg'} : {transform: 'translate(0px, 0px'}} src={plus} alt="" />
                             </button>
@@ -152,7 +152,7 @@ const Faq = () => {
                         {toggle === '11' && <p className="subTitle">
                             We actually do a Presale : spots will be available and will be capped at 1000 members. (Go to ⚪┃how-to-whitelist-me for have your place).<br /><br />
 
-                            If you want to have a chance to be in WhiteList, invite your friends in our server Discord : <a href="https://discord.com/invite/meta-legends" target='_blank'>https://discord.gg/meta-legends</a><br /><br />
+                            If you want to have a chance to be in WhiteList, invite your friends in our server Discord : <a href="https://discord.com/invite/meta-Cards" target='_blank'>https://discord.gg/meta-Cards</a><br /><br />
 
                             Being whitelisted offers you the possibility to get a pre-mint.
                         </p>}

@@ -125,6 +125,8 @@ body {
   backdrop-filter: blur(10px);
 }
 #header .header-video .header-video__button-cover .header-video__button-overlay .sold-out-button {
+  display: flex;
+  flex-direction: column;
   background: linear-gradient(90deg, #434bba, #6d3a88);
   color: white;
   font-weight: 600;
@@ -136,7 +138,7 @@ body {
   border: none;
   border-radius: 7px;
   margin: 5px 0px;
-  padding: 24px 40px;
+  padding: 20px 40px;
   font-size: 80px;
   font-weight: 900;
   border-radius: 1rem;

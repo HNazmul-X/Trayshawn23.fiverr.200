@@ -12,7 +12,7 @@ export const roadmapData = [
           While waiting for their consciousness to be uploaded , humans have
           taken shelter on Discord.
           <span className="bold">
-            The council of the Legends has been created.
+            The council of the Cards has been created.
           </span>
         </p>{" "}
       </>,
@@ -67,7 +67,7 @@ export const roadmapData = [
           <a href="#">Meta-Connect.</a>
         </p>
         <p>
-          The Legends Holders will be able to{" "}
+          The Cards Holders will be able to{" "}
           <span className="bold">appear on a world map</span> ( only if they
           want to ) and{" "}
           <span className="bold">meet each other in the real world.</span>
@@ -84,7 +84,7 @@ export const roadmapData = [
           in real life will be offered on the app.
         </p>
         <p className="mb-0">
-          Exclusive news featuring the Legends will be available on the app.
+          Exclusive news featuring the Cards will be available on the app.
         </p>
         <p>
           <span>Partnership with other NFT projects</span> will be created to
@@ -109,7 +109,7 @@ export const roadmapData = [
     progress: 100,
     text: [
       <>
-        <p className="mb-0 bold">The ultimate purpose of the Meta Legends :</p>
+        <p className="mb-0 bold">The ultimate purpose of the Meta Cards :</p>
         <p>
           Creation of our Metaverse <span className="bold sky">META-LIFE</span>
         </p>

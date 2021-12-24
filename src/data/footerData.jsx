@@ -16,14 +16,14 @@ export const footerLinkData = [
     mail: false,
   },
   {
-    text: "Lite Paper - Meta Legends",
+    text: "Lite Paper - Meta Cards",
     destination: "text",
     extranalLink: true,
     mail: false,
   },
   {
-    text: "contact@meta-legends.com",
-    destination: "mailto:contact@meta-legends.com",
+    text: "contact@meta-Cards.com",
+    destination: "mailto:contact@meta-Cards.com",
     extranalLink: false,
     mail: true,
   },

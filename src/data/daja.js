@@ -26,8 +26,8 @@ export const ourTeams = [
             subTitle: '',
             twitter: i,
             instagram: t,
-            link1: 'https://twitter.com/metalegendsnft',
-            link2: 'https://www.instagram.com/meta.legends/'
+            link1: 'https://twitter.com/metaCardsnft',
+            link2: 'https://www.instagram.com/meta.Cards/'
         },
         img: ourTI1
     },
@@ -65,8 +65,8 @@ export const ourTeams = [
             subTitle: 'Genius Marketing',
             twitter: i,
             instagram: t,
-            link1: 'https://www.meta-legends.com/',
-            link2: 'https://www.instagram.com/hamza_legends/'
+            link1: 'https://www.meta-Cards.com/',
+            link2: 'https://www.instagram.com/hamza_Cards/'
         },
         img: ourTI4
     },

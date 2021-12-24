@@ -14,7 +14,7 @@ const Team = () => {
                         <span className="title">TEAM</span>
                     </span>
 
-                    <p className="description">The tremendous amount of work from our incredible team of 13 Angels Legends, allowed Meta Legends to be born.</p>
+                    <p className="description">The tremendous amount of work from our incredible team of 13 Angels Cards, allowed Meta Cards to be born.</p>
                 </div>
             </div>
 

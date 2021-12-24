@@ -9,7 +9,7 @@ export default function Metavers() {
           <img src={metaversimg} alt="metavers image" />
           <p>
             <span className="bold">
-              The purpose of Meta Legends is to{" "}
+              The purpose of Meta Cards is to{" "}
               <span className="underline">create our own Metaverse :</span>{" "}
               <a href="#">META LIFE</a>
             </span>
