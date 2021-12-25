@@ -10,7 +10,7 @@
     // border: 1px solid $white;
     margin-bottom: -113px;
     position: relative;
-    z-index: 2;
+    z-index: 9999;
 
     @include md{
         width: 100%;

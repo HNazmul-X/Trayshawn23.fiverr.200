@@ -364,7 +364,7 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 50%, 95% 100%, 5% 100%, 0% 50%);
   margin-bottom: -113px;
   position: relative;
-  z-index: 2;
+  z-index: 9999;
 }
 @media screen and (max-width: 768px) {
   #navbar {
