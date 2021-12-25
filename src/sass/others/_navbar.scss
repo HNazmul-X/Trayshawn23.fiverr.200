@@ -3,7 +3,7 @@
 #navbar {
     width: 95%;
     // min-width: 992px;
-    background: $navy-black;
+    background: $body-color;
     padding: 30px 10px 20px;
     margin: auto;
     clip-path: polygon(0 0, 100% 0, 100% 50%, 95% 100%, 5% 100%, 0% 50%);
@@ -11,6 +11,10 @@
     margin-bottom: -113px;
     position: relative;
     z-index: 2;
+
+    @include md{
+        width: 100%;
+    }
 
     @include xl {
         clip-path: none;
@@ -56,18 +60,17 @@
             }
         }
 
-        .navbar-closer-icon{
+        .navbar-closer-icon {
             @extend .navbar-opener-icon;
             position: fixed;
             right: -100%;
-            top:10px;
+            top: 10px;
             z-index: 1001;
             transition: 0.4s;
 
-            &.active{
+            &.active {
                 right: 0px;
             }
-
         }
 
         .navbar-content {
@@ -89,7 +92,8 @@
                     width: 100%;
                     .nav-item {
                         .nav-link {
-                            color: white;
+                            color: darken($color: $white, $amount: 30);
+
                             font-size: 16px;
                             font-weight: 700;
                             text-transform: uppercase;
@@ -108,7 +112,7 @@
                     top: 0px;
                     z-index: 1000;
                     right: -100%;
-                    background: darken($indigo,25);;
+                    background: darken($indigo, 25);
                     transition: 0.5s ease-out;
                     &.show {
                         right: -30px;
@@ -131,7 +135,7 @@
 
             .navbar-icons {
                 height: 100%;
-                
+
                 .nav {
                     height: 100%;
                     align-items: center;
@@ -147,10 +151,10 @@
                         }
                         .nav-link,
                         > * {
-                            color: white;
+                            color: darken($color: $white, $amount: 30);
                             text-transform: uppercase;
                             border-radius: 10px;
-                            background: linear-gradient(100deg, $indigo, $navy-blue);
+                            background: linear-gradient(100deg, darken($indigo, 30) 10%, $navy-blue);
                             height: 100%;
                             display: flex;
                             align-items: center;
@@ -177,7 +181,7 @@
                 height: 100vh;
                 top: 0px;
                 flex-flow: column;
-                background: darken($indigo,25);
+                background: darken($indigo, 25);
                 justify-content: center;
                 transition: 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
                 &.active {

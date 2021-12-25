@@ -1,6 +1,6 @@
 import React from "react";
 import img from "../../Assets/Images/crown.f3383635.svg";
-import logo from "../../Assets/Images/logo.svg";
+import logo from "../../Assets/Images/logo.png";
 import { footerLinkData, socialLinkData } from "./../../data/footerData";
 import { Link } from "react-router-dom";
 

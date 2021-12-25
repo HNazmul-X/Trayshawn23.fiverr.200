@@ -29,7 +29,7 @@ const Faq = () => {
                             </button>
                         </div>
 
-                        {toggle === '1' && <p className="subTitle">Meta Cards will be available to mint at <a href="https://www.meta-Cards.com/" target="_blank">https://www.meta-Cards.com/</a></p>}
+                        {toggle === '1' && <p className="subTitle fade">Meta Cards will be available to mint at <a href="https://www.meta-Cards.com/" target="_blank">https://www.meta-Cards.com/</a></p>}
                     </div>
 
                     <div className="intro">

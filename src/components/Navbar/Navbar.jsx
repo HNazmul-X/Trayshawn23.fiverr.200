@@ -9,7 +9,7 @@ const Navbar = () => {
             <nav id="navbar">
                 <div className="navbar-container">
                     <div className="navbar-brand">
-                        <img src="https://www.meta-legends.com/img/title-logo.1c7a7a86.svg" alt="" />
+                       <h4 className="font-akira">Meta Card</h4>
                     </div>
                     <div className="navbar-opener-icon ms-auto mx-md-auto" onClick={() => SetIsContentShow(!isContentShow)}>
                         <InlineIcon icon="la:bars" />

@@ -4,7 +4,7 @@
     padding: 150px 0 0;
 
     .fTitle {
-        text-shadow: 0 0 32px rgb(159 55 208 / 79%);
+        text-shadow: 0 0 32px transparentize($color: $pink, $amount: 0.23);
         font-size: 6rem;
         line-height: 1;
         margin-bottom: 4rem;
@@ -13,7 +13,7 @@
         position: relative;
 
         span {
-            color: #cf4a7a;
+            color: $pink;
         }
     }
     .fTitle::before {
@@ -47,7 +47,7 @@
         transition: all .5s ease-in-out;
 
         .intro {
-            color: white;
+            color: $white;
             margin-top: 1.75rem;
             margin-bottom: 1.75rem;
             font-family: Bronova,sans-serif;
@@ -62,7 +62,7 @@
                 position: relative;
                 padding: 1rem 4rem;
                 cursor: pointer;
-                /* background-image: linear-gradient(to right , #434bba, #6d3a88); */
+                transition: 0.5s;
             
                 h2 {
                     font-size: 1.25rem;
@@ -74,11 +74,11 @@
                 }
 
                 button {
-                    background: #120D2B;
+                    background: $navy-black;
                     padding: 13px 18px;
                     border-width: 1px;
                     border-style: solid;
-                    border-image: linear-gradient(to right, #434bba, #6d3a88) 1;
+                    border-image: linear-gradient(to right, $navy-blue, $indigo) 1;
                     transition: all .5s ease-in-out;
 
                     img {
@@ -91,27 +91,24 @@
                     justify-content: space-between;
                     padding: 1rem 2rem;
                     cursor: pointer;
-                    /* background-image: linear-gradient(to right , #434bba, #6d3a88); */
                 }
             }
             .titleWrapper:hover { 
                 h2 {
-                 text-shadow: 0 0 10px #fff;
+                 text-shadow: 0 0 10px $white;
                 }
                 button {
-                    box-shadow: 0 0 10px rgb(159 55 208 / 79%);
+                    box-shadow: 0 0 10px transparentize($color: $pink, $amount: 0.21);
                 }
             }
 
             .subTitle {
                 font-size: 1.25rem;
-                line-height: 1.75rem;
                 padding: 1.25rem 4rem;
-                background-color: rgba(27,21,62, 1);
-                height: auto;
-
+                background-color: lighten($color: $navy-black, $amount: 10);
+                transition: 0.5s;
                 a {
-                    color: #fff;
+                    color: $white;
                     text-decoration: none;
                 }
                 @include sm{

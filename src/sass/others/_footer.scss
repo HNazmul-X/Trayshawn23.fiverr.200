@@ -18,7 +18,8 @@
     align-items: center;
     width: 100%;
     .logo {
-      width: 10rem;
+      width: 15rem;
+      filter: drop-shadow(4px 5px 10px darken($black,2));
       @include md {
         width: 8rem;
       }

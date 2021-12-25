@@ -1,14 +1,14 @@
-$body-color:#120d2b;
-$pink:#cf4a7a;
-$navy-blue:#6c0092;
+$body-color:#15191d;
+$pink:#534acf;
+$navy-blue:#004492;
 $white:#fff;
-$indigo:#5d40ae;
+$indigo:#ae2fe0;
 $sky:#10a6f8;
-$black:#000;
-$navy-black:#040015;
-$navy-grey:#26203e;
+$black:rgb(10, 12, 14);
+$navy-black:#050b16;
+$navy-grey:#202a3e;
 
-$pink-navyBlue-gd:linear-gradient(90deg, rgb(67, 75, 186), rgb(109, 58, 136));
+$pink-navyBlue-gd:linear-gradient(90deg, $navy-blue, $indigo);
 $white-text-shadow:0 0 32px transparentize($white,0.7);
 $pink-text-shadow:0 0 32px transparentize($pink,0.7);
-$pink-sm-shadow:0 0 5px #9d55c480, 0 0 10px #8a46af, 0 0 25px #6d3a8880;
+$pink-sm-shadow:0 0 5px #6655c480, 0 0 10px #4846af, 0 0 25px #3a3f8880;
